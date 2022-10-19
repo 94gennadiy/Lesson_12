@@ -1,0 +1,411 @@
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+}
+
+body {
+    background-color: rgb(129, 97, 62);
+}
+
+.section {
+    margin-bottom: 30px;
+    padding: 70px;
+}
+
+.section__body {
+    background-color: rgb(195, 176, 145);
+    width: 300px;
+    height: 300px;
+}
+
+.section__item {
+    background-color: rgb(109, 113, 46);
+    width: 300px;
+    height: 300px;
+}
+
+.section__item--translate {
+    transform: translate(60px, 20px);
+}
+
+.section__item--scale {
+    transform: scale(0.2) translate(-160px, -160px);
+}
+
+.section__item--rotate {
+    transform: rotate(160deg) scale(0.7);
+}
+
+.section__item--rotate:hover {
+    transform: rotate(-160deg) scale(0.7);
+}
+
+.section__item--skew {
+    transform: skew(20deg, 30deg);
+    outline: 2px solid white;
+}
+
+.section__item--origin {
+    background: rgb(109, 113, 46) url('../img/trololo.png') center /120px 120px no-repeat;
+    border-radius: 25px;
+    transform: rotate(-20deg);
+    transform-origin: 0 0;
+}
+
+.section__body--perspective {
+    perspective: 350px;
+    perspective-origin: -30px 30px;
+}
+
+.section__item--perspective {
+    background: rgb(109, 113, 46) url('../img/trololo.png') center /220px 220px no-repeat;
+    transform: rotateX(60deg);
+}
+
+.section__body--perspective-3d {
+    perspective: 350px;
+}
+
+.section__item--perspective-3d {
+    background: rgb(109, 113, 46) url('../img/trololo.png') center /200px 200px no-repeat;
+    transform: translate3d(100px, 20px, 100px);
+}
+
+.section__body--style {
+    perspective: 300px;
+    transform-style: preserve-3d;
+}
+
+.section__item--style {
+    transform: rotateY(30deg);
+    background: rgb(109, 113, 46) url('../img/trololo.png') center /200px 200px no-repeat;
+}
+
+.creative-block {
+    background-color: grey;
+    width: 1902px;
+    height: 1200px;
+    position: relative;
+    perspective: 400px;
+}
+
+.creative-block__field {
+    background: rgb(0, 154, 23);
+    width: 1902px;
+    height: 600px;
+    position: absolute;
+    top: 600px;
+}
+
+.creative-block__sky {
+    background-color: rgb(0, 181, 226);
+    width: 1902px;
+    height: 600px;
+}
+
+.creative-block__road {
+    background-color: black;
+    width: 250px;
+    height: 600px;
+    position: absolute;
+    top: 592px;
+    left: 940px;
+    transform-origin: 40px 60px;
+    transform: skew(-30deg, 0deg) rotateX(30deg);
+}
+
+.road-mark {
+    background-color: white;
+    width: 10px;
+    height: 30px;
+}
+
+.road-mark--first {
+    position: absolute;
+    left: 125px;
+}
+
+.road-mark--second {
+    position: absolute;
+    left: 125px;
+    top: 75px;
+}
+
+.road-mark--third {
+    position: absolute;
+    left: 125px;
+    top: 150px;
+}
+
+.road-mark--fourth {
+    position: absolute;
+    left: 125px;
+    top: 225px;
+}
+
+.road-mark--fifth {
+    position: absolute;
+    left: 125px;
+    top: 300px;
+}
+
+.road-mark--sixth {
+    position: absolute;
+    left: 125px;
+    top: 375px;
+}
+
+.road-mark--seventh {
+    position: absolute;
+    left: 125px;
+    top: 450px;
+}
+
+.creatve-block__sun {
+    background: url('../img/yoba.png') center /200px 200px no-repeat;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 90px;
+    left: 200px;
+    transform: rotate(25deg);
+}
+
+.creatve-block__sun:hover {
+    background: url('../img/ehidnyi_yoba.png') center /200px 200px no-repeat;
+}
+
+.creative-block__cloud {
+    width: 400px;
+    height: 200px;
+}
+
+.creative-block__cloud--position-one {
+    position: absolute;
+    top: 20px;
+    left: 600px;
+}
+
+.creative-block__cloud--position-two {
+    position: absolute;
+    top: 70px;
+    left: 1000px;
+}
+
+.creative-block__cloud--position-three {
+    position: absolute;
+    top: 20px;
+    left: 1400px;
+}
+
+.cloud__item-one {
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 115px;
+    left: 25px;
+    z-index: 1;
+}
+
+.cloud__item-two {
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 115px;
+    left: 60px;
+    z-index: 1;
+}
+
+.cloud__item-three {
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 115px;
+    left: 85px;
+    z-index: 1;
+}
+
+.cloud__item-four {
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 115px;
+    left: 105px;
+    z-index: 1;
+}
+
+.cloud__item-five {
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 115px;
+    left: 130px;
+    z-index: 1;
+}
+
+.cloud__item-six {
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 115px;
+    left: 155px;
+    z-index: 1;
+}
+
+.cloud__item-seven {
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 115px;
+    left: 180px;
+    z-index: 1;
+}
+
+.cloud__item-eight {
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 115px;
+    left: 205px;
+    z-index: 1;
+}
+
+.cloud__item-nine {
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 95px;
+    left: 45px;
+    z-index: 1;
+}
+
+.cloud__item-ten {
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 95px;
+    left: 65px;
+    z-index: 1;
+}
+
+.cloud__item-eleven {
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 95px;
+    left: 85px;
+    z-index: 1;
+}
+
+.cloud__item-eleven {
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 95px;
+    left: 100px;
+    z-index: 1;
+}
+
+.cloud__item-twelve {
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 95px;
+    left: 125px;
+    z-index: 1;
+}
+
+.cloud__item-thirteen {
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 95px;
+    left: 145px;
+    z-index: 1;
+}
+
+.cloud__item-fourteen {
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 95px;
+    left: 160px;
+    z-index: 1;
+}
+
+.cloud__item-fifteen {
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 95px;
+    left: 180px;
+    z-index: 1;
+}
+
+.creative-block__car {
+    background: url('../img/Red-Ferr.png') center/cover no-repeat;
+    width: 350px;
+    height: 220px;
+    position: absolute;
+    top: 850px;
+    left: 790px;
+    transform-origin: 40px 60px;
+    transform: skew(-30deg, 0deg) rotateX(30deg);
+    z-index: 2;
+}
+
+.creative-block__stupid-wojak {
+    background: url('../img/stupidwojak.png') 0 0/contain no-repeat;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 830px;
+    left: 950px;
+    z-index: 3;
+}
+
+.creative-block__bystander {
+    background: url('../img/trololo.png') 0 0/220px 200px no-repeat;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 830px;
+    left: 1850px;
+    transform: rotate(-20deg);
+}
+
+.creative-block__bystander:hover {
+    left: 1775px;
+}
